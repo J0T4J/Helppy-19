@@ -4,6 +4,7 @@ import 'image_banner.dart';
 
 class TelaDicas extends StatelessWidget {
   @override
+  
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -32,11 +33,12 @@ class TelaDicas extends StatelessWidget {
               )
         ],
       ),
-      body: new ListView.builder(itemBuilder: (context, index) {
+      body: new ListView.builder(itemBuilder: (context, index,) {
+        
         return new Padding(
           padding: new EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
           child: new Card(
-            elevation: 12.0,
+            elevation: 5.0,
             shape: new RoundedRectangleBorder(
                 borderRadius: new BorderRadius.circular(16.0)),
             child: new Column(
@@ -58,7 +60,7 @@ class TelaDicas extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       new Text(
-                        'Aqui fica o título da dica!'.toUpperCase(),
+                        'Aqui vai ser o título da dica!'.toUpperCase(),
                         style: Theme.of(context).textTheme.title,
                       ),
                       new SizedBox(height: 16.0),
@@ -75,7 +77,7 @@ class TelaDicas extends StatelessWidget {
           ),
         );
       }),
-      /* body: Container(
+       /*body: Container(
         
         margin: EdgeInsets.all(0),
         color: Colors.white,
@@ -90,7 +92,8 @@ class TelaDicas extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  ImageBanner("assets/images/kiyomizu-dera.jpg"),
+                  Image.network("https://s2.glbimg.com/w4GUjGO-kT0xLcbWSLHqe-fG_Bo=/0x0:1086x652/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/x/J/0ldrArS9q9dOOLdE16KA/estrutura-do-corona.jpg"),
+                  
                 ]),
             Container(
               // Texto dica 1
@@ -160,7 +163,7 @@ class TelaDicas extends StatelessWidget {
       ),*/
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Icon(Icons.check),
+        child: Icon(Icons.add),
       ),
     );
   }
