@@ -64,7 +64,7 @@ class TelaDicas extends StatelessWidget {
                       new SizedBox(height: 16.0),
                       new Row(
                         children: <Widget>[
-                          new Text('Imagem do Coronavirus!'),
+                          new Text('Essa é a Imagem do Coronavirus!'),
                         ],
                       ),
                     ],
