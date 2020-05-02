@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:teste_video/TelaVideos.dart';
-import 'image_banner.dart';
+import 'lista_dicas.dart';
 
 class TelaDicas extends StatelessWidget {
   @override
@@ -22,7 +22,7 @@ class TelaDicas extends StatelessWidget {
         actions: <Widget>[
           IconButton(
               icon: Icon(Icons.movie),
-              color: Colors.black,
+              color: Colors.white,
               onPressed: () {
                 Navigator.push(
                   context,
@@ -32,49 +32,53 @@ class TelaDicas extends StatelessWidget {
               )
         ],
       ),
-      body: new ListView.builder(itemBuilder: (context, index) {
-        return new Padding(
-          padding: new EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
-          child: new Card(
-            elevation: 12.0,
-            shape: new RoundedRectangleBorder(
-                borderRadius: new BorderRadius.circular(16.0)),
-            child: new Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                new ClipRRect(
-                  child: new Image.network(
-                      'https://s2.glbimg.com/w4GUjGO-kT0xLcbWSLHqe-fG_Bo=/0x0:1086x652/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/x/J/0ldrArS9q9dOOLdE16KA/estrutura-do-corona.jpg'),
-                  borderRadius: BorderRadius.only(
-                    topLeft: new Radius.circular(16.0),
-                    topRight: new Radius.circular(16.0),
-                  ),
-                ),
-                new Padding(
-                  padding: new EdgeInsets.all(16.0),
-                  child: new Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      new Text(
-                        'Aqui fica o título da dica!'.toUpperCase(),
-                        style: Theme.of(context).textTheme.title,
+      body: new ListView.builder(
+          itemCount: dicas.length,
+          itemBuilder: (context, index) {
+            return new Padding(
+              padding:
+                  new EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+              child: new Card(
+                elevation: 12.0,
+                shape: new RoundedRectangleBorder(
+                    borderRadius: new BorderRadius.circular(16.0)),
+                child: new Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    new ClipRRect(
+                      child: new Image.network(dicas[index].imageUrl),
+                      borderRadius: BorderRadius.only(
+                        topLeft: new Radius.circular(16.0),
+                        topRight: new Radius.circular(16.0),
                       ),
-                      new SizedBox(height: 16.0),
-                      new Row(
+                    ),
+                    new Padding(
+                      padding: new EdgeInsets.all(16.0),
+                      child: new Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          new Text('Essa é a Imagem do Coronavirus!'),
+                          new Text(
+                            dicas[index].title,
+                            style: Theme.of(context).textTheme.title,
+                          ),
+                          new SizedBox(height: 16.0),
+                          new Row(
+                            children: <Widget>[
+                              Flexible(
+                                child: new Text(dicas[index].text),
+                              ),
+                            ],
+                          ),
                         ],
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
-              ],
-            ),
-          ),
-        );
-      }),
+              ),
+            );
+          }),
       /* body: Container(
         
         margin: EdgeInsets.all(0),
