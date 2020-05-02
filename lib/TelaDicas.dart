@@ -164,7 +164,7 @@ class TelaDicas extends StatelessWidget {
       ),*/
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Icon(Icons.check),
+        child: Icon(Icons.add)
       ),
     );
   }

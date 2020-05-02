@@ -9,7 +9,7 @@ class Dica {
 List dicas = [
   Dica(
     imageUrl:
-        'https://www.vilavelha.es.gov.br/midia/imagens/2020/03/41439_16032020_900x500.jpg',
+        'https://www.rbsdirect.com.br/imagesrc/17383078.jpg?w=700',
     title:
         'Lavar as mãos é uma das principais formas de prevenção contra o Coronavírus',
     text:
