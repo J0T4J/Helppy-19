@@ -28,9 +28,9 @@ List dicas = [
       text: "Celulares, notebooks e outros objetos de uso pessoal devem ser limpos com frequência. "),
   Dica(
       imageUrl:
-          "https://d36tnp772eyphs.cloudfront.net/blogs/1/2018/02/Great-Wall-of-China-view.jpg",
-      title: 'sdfsdfs',
-      text: "The Great Wall of China"),
+          "https://img.freepik.com/fotos-gratis/correio-entregador-de-mascara-protetora-e-luvas-medicas-oferece-comida-e-cafe-para-viagem_120485-4330.jpg",
+      title: 'Matenha distancia ao entregar produtos',
+      text: "Use sempre luvas, sacolas e máscaras descartaveis ao entregar ou receber produtos, pois isso dificulta a transmissão do vírus."),
   Dica(
       imageUrl:
           "https://d36tnp772eyphs.cloudfront.net/blogs/1/2018/02/View-of-the-Colosseum.jpg",
