@@ -9,7 +9,7 @@ class Dica {
 List dicas = [
   Dica(
     imageUrl:
-        'https://www.rbsdirect.com.br/imagesrc/17383078.jpg?w=700',
+        'https://www.rbsdirect.com.br/imagesrc/17383078.jpg',
     title:
         'Lavar as mãos é uma das principais formas de prevenção contra o Coronavírus',
     text:
@@ -18,13 +18,13 @@ List dicas = [
   Dica(
     imageUrl:
         "https://d36tnp772eyphs.cloudfront.net/blogs/1/2018/02/Christ-the-Redeemer.jpg",
-    title: 'sdfsdsd',
+    title: 'Use uma máscara ao sair em público',
     text: "Christ the Redeemer",
   ),
   Dica(
       imageUrl:
           "https://d36tnp772eyphs.cloudfront.net/blogs/1/2016/03/petra-jordan9.jpg",
-      title: 'sdfdssd',
+      title: 'Lempre sempre de higienizar objetos pessoais',
       text: "Petra"),
   Dica(
       imageUrl:
