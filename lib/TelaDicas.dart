@@ -22,6 +22,7 @@ class TelaDicas extends StatelessWidget {
         actions: <Widget>[
           IconButton(
               icon: Icon(Icons.movie),
+              
               color: Colors.white,
               onPressed: () {
                 Navigator.push(
@@ -39,7 +40,7 @@ class TelaDicas extends StatelessWidget {
               padding:
                   new EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
               child: new Card(
-                elevation: 8.0,
+                elevation: 4.0,
                 shape: new RoundedRectangleBorder(
                     borderRadius: new BorderRadius.circular(16.0)),
                 child: new Column(
@@ -62,6 +63,7 @@ class TelaDicas extends StatelessWidget {
                           new Text(
                             dicas[index].title,
                             style: Theme.of(context).textTheme.title,
+                             
                           ),
                           new SizedBox(height: 16.0),
                           new Row(

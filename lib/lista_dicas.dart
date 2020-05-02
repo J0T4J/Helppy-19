@@ -18,14 +18,14 @@ List dicas = [
   Dica(
     imageUrl:
         "https://abrilsuperinteressante.files.wordpress.com/2020/02/corona-no-brasil-5-perguntas-site.png",
-    title: 'Use uma máscara ao sair em público',
+    title: 'Use máscara ao sair em público',
     text: "Em meio a atual crise pandêmica do novo coronavírus (COVID-19), o Ministério da Saúde (MS) recomenda à população o uso de máscaras, incluindo as de tecido. Usar máscaras de tecido é uma alternativa de grande importância para a população saudável, pois bloqueia duas portas de entrada do coronavírus: a boca e o nariz. É importante ressaltar que a máscara de tecido deve ser lavada após o uso, para evitar transporte de doenças para a sua casa.",
   ),
   Dica(
       imageUrl:
-          "https://d36tnp772eyphs.cloudfront.net/blogs/1/2016/03/petra-jordan9.jpg",
+          "https://cidadeverde.com/assets/uploads/posts/limpeza-celular-coronavirus-robertaaline.jpg",
       title: 'Lempre sempre de higienizar objetos pessoais',
-      text: "Petra"),
+      text: "Celulares, notebooks e outros objetos de uso pessoal devem ser limpos com frequência. "),
   Dica(
       imageUrl:
           "https://d36tnp772eyphs.cloudfront.net/blogs/1/2018/02/Great-Wall-of-China-view.jpg",
