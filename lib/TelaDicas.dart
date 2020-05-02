@@ -39,7 +39,7 @@ class TelaDicas extends StatelessWidget {
               padding:
                   new EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
               child: new Card(
-                elevation: 12.0,
+                elevation: 8.0,
                 shape: new RoundedRectangleBorder(
                     borderRadius: new BorderRadius.circular(16.0)),
                 child: new Column(

@@ -9,7 +9,7 @@ class Dica {
 List dicas = [
   Dica(
     imageUrl:
-        'https://www.rbsdirect.com.br/imagesrc/17383078.jpg',
+        'https://d36tnp772eyphs.cloudfront.net/blogs/1/2018/02/Christ-the-Redeemer.jpg',
     title:
         'Lavar as mãos é uma das principais formas de prevenção contra o Coronavírus',
     text:
