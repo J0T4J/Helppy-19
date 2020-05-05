@@ -1,18 +1,18 @@
 class Video {
   String videoUrl;
   String title;
-  String text;
 
-  Video({this.videoUrl, this.text, this.title});
+  Video({this.videoUrl, this.title});
 }
 
 List videos = [
   Video(
-    videoUrl:
-        'https://www.blogdomadeira.com.br/wp-content/uploads/a-forma-correta-de-lavar-as-m%C3%A3os.mp4',
-    title:
-        'Lavar as mãos é uma das principais formas de prevenção contra o Coronavírus',
-    text:
-        "hdgsv",
+    videoUrl: 'https://www.youtube.com/watch?v=C83jhuQMWqc',
+    title: 'É necessário a higienização correta das mãos no combate ao COVID-19!',
+  ),
+
+  Video(
+    videoUrl: 'https://www.youtube.com/watch?v=IlqwgyhBE0w',
+    title: 'Suspeita? Se consulte mesmo sem sair de casa!',
   ),
 ];
